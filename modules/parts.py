@@ -12,6 +12,8 @@ def part(string):
     st = ""
     for char in string:
         if char == " ":
+            characters.append("space")
+        elif char =="?" or char == "," or char == ";" or char == ":":
             characters.append(char)
             count = 0
         else:
@@ -25,28 +27,35 @@ def part(string):
 
     return characters
 
-def sabdaharu(characters):
+def letters(characters):
     """
-    returns list of "shabda" of characters
+    returns list of letters formed by  characters
     """
     letters = ["क", "ख", "ग", "घ", "ड॒", "च", "छ", "ज", "झ", "ञ", "ट", "ठ", "ड", "ढ", "ण", "त", "थ" ,"द", "ध", "न", "प", "फ", "ब", "भ", "म", "य", "र", "ल", "व", "श", "ष", "स", "ह", "अ", "आ", "इ", "ई", "उ", "ऊ", "ए", "ऐ", "ओ" ]
     shabda = []
     st = ""
     for ch in characters:
-        if ch == " ":
+        if ch == "space":
+            shabda.append(st)
+            st = ""
             shabda.append(ch)
         else:
             if ch in letters:
-                shabda.append(st)
+                if st != "":
+                    shabda.append(st)
                 st = ch
             else:
                 st += ch
+
+    
     shabda.append(st)
-    shabda.pop(0)
+    for ch in shabda:
+        if ch == "":
+            shabda.remove(ch)
     return  shabda
 
 
 if __name__ == "__main__":
-    s = sabdaharu(part(sys.argv[1]))
+    s = letters(part(sys.argv[1]))
     for char in s:
         print "[ "+char+" ]",
