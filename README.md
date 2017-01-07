@@ -4,7 +4,7 @@
   
 # USAGE
 ```
-python speak_nepali.py
+python speak_nepali.py "के छ"
 ```
 #DEPEDENCIES
   <ul>
