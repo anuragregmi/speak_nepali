@@ -17,7 +17,7 @@ class Speak:
         """
         starts thread to play the sound
         """
-        delay = 0.6
+        delay = 0.17
         for l in self.letters:
             sound = l+".wav"
             if sound in self.database:
@@ -26,6 +26,7 @@ class Speak:
                 thread.start_new_thread(self.playsound,(sound,delay))
                 time.sleep(delay)
                 #delay = 0.6
+                
 
     def playsound(self,sound,delay):
         """
