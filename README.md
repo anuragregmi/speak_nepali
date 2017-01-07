@@ -7,7 +7,8 @@
 python speak_nepali.py
 ```
 #DEPEDENCIES
-  pyaudio
-    `pip install pyaudio`<br>
-    (pyaudio requires portaudio.h)<br>
-      `apt install portaudio-19.dev`
+  <ul>
+  <li>pyaudio
+    `#pip install pyaudio`<br>
+        (pyaudio requires portaudio.h)<br>
+        `#apt install portaudio-19.dev`
