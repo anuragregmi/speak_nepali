@@ -8,7 +8,8 @@ python speak_nepali.py "के छ"
 ```
 #DEPEDENCIES
   <ul>
-  <li>pyaudio
-    `#pip install pyaudio`<br>
-        (pyaudio requires portaudio.h)<br>
-        `#apt install portaudio-19.dev`
+    <li>pyaudio<br/>
+    `#pip install pyaudio`<br/>
+     (pyaudio requires portaudio.h)<br/>
+     `#apt install portaudio-19.dev`
+  </ul>
