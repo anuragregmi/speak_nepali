@@ -1,5 +1,7 @@
 # speak_nepali
 ### nepali text to speech app 
+
+*Sound files are originally from [meamit/nepali-text-to-speech](https://github.com/meamit/nepali-text-to-speech)*
   (sound files are being updated)
   
 # USAGE
